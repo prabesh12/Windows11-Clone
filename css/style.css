@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    
+    position: relative;
+    background-image: url('../img/bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100%;
+    /* filter: brightness(0%); */
+    
+    
+   
+}
+
+.taskbar{
+    /* border: 1px solid white; */
+    border-top: 1px solid rgb(58, 58, 58);
+    background-image: url('../img/taskbarbackground.jpg');
+    height: 4em;
+    position: absolute;
+    width: 100%;
+    top: 92vh;
+    display: flex;
+    /* grid-template-columns: auto auto auto; */
+    justify-content: space-between;
+    align-items: center;
+}
+.second-section{
+    /* border: 1px solid white; */
+    width: 28%;
+    /* border: 1px solid white; */
+
+    height: 65%;
+    bottom: 25%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    left: 36%;
+    justify-content: space-around;
+    align-items: center;
+}
+svg{
+    position: absolute;
+    box-shadow: rgb(156, 154, 154);
+    top: 10%;
+    max-width: 100%;
+    max-height: 80%;
+}
+.windowbtn{
+    /* border: 1px solid white; */
+
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    left:20%;
+}
+
+.searchbtn{
+    /* border: 1px solid white; */
+
+    position: absolute;
+    left:32%;
+    height: 100%;
+    width: 10%;
+}
+.search{
+    /* border: 2px solid white; */
+   transform: rotate(70deg);
+}
+.switchbtn{
+    /* border: 1px solid white; */
+
+    position: absolute;
+    left:44%;
+    height: 100%;
+    width: 10%;
+
+}
+.microsoftbtn{
+    /* border: 1px solid white; */
+
+    position: absolute;
+    left:56%;
+    height: 100%;
+    width: 10%;
+
+}
+
+.edgebtn{
+    /* border: 1px solid white; */
+
+    position: absolute;
+    left:68%;
+    height: 100%;
+    width: 10%;
+
+}
+.vscode{
+
+    position: absolute;
+    left:80%;
+    height: 100%;
+    width: 10%;
+}
+
+.btnhover:hover{
+    border-radius: 4px;
+    background-color: rgb(138, 136, 136);
+}
+
+.taskbarright {
+   
+    position: absolute;
+    justify-self: flex-end;
+    right: 0;
+    margin: 0;
+    height: 75%;
+    width: 15%;    
+}
+
+.more{
+    position: absolute;
+  
+    background: transparent;
+    bottom: 13px;
+    width: 30px;
+    height: 72%;
+    left:85% ;
+    color: #000;
+
+}
+
+.utils{
+    position: absolute;
+    background: transparent;
+    bottom: 13px;
+    
+    height: 72%;
+    width: 5.5%;
+    left: 87%;
+
+}
+/* .wifi{
+    position: absolute;
+    
+    background: transparent;
+    bottom: 13px;
+    width: 30px;
+    height: 72%;
+    left:87% ;
+    color: #000;
+
+}
+.sound{
+    position: absolute;
+    
+    background: transparent;
+    bottom: 13px;
+    width: 30px;
+    height: 72%;
+    left:88.8% ;
+    color: #000;
+
+}
+.language{
+    position: absolute;
+   
+    background: transparent;
+    bottom: 13px;
+    width: 30px;
+    height: 72%;
+    left:90.6% ;
+    color: #000;
+
+} */
+.datetime{
+    position: absolute;
+    
+    z-index: 10001;
+    
+    background: transparent;
+    bottom: 13px;
+    width: 65px;
+    height: 72%;
+    left:92.6% ;
+    color: #000;
+
+}
+.notifications{
+    position: absolute;
+   
+    background: transparent;
+    bottom: 13px;
+    width: 40px;
+    height: 72%;
+    left:97% ;
+    color: #000;
+
+}
+
+.dicon{
+    height: 50px;
+    width: 50px;
+   
+    
+    margin-bottom: 15px;
+    
+}
+.dicon:hover{
+    background-color: rgb(71, 65, 65);
+    opacity: 0.8;
+    display: block;
+    
+
+
+}
+
+.recyclebin{
+    position: relative;
+    background-image: url("../img/recyclebinicon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mypc{
+    position: relative;
+    background-image: url("../img/thispc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.camera{
+    position: relative;
+    background-image: url("../img/camera.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vscodeI{
+    position: relative;
+    background-image: url("../img/vscode.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.startmenu{
+    position: absolute;
+    /* top: 5%; */
+    left: 35%;
+    width: 30%;
+    height: 620px;
+    background-color: rgb(34, 34, 73);
+    opacity: 0.91;
+    
+    /* background-image: url("../img/startmenu.PNG");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    border-radius: 15px;
+    
+    text-align: center;
+    align-items: center;
+    transition: top 1s ;
+    /* display: none; */
+}
+
+
+.powerOff {
+    position: relative;
+    top: 87%;
+    left: 85%;
+    background-image: url(../img/shutdown.png);
+
+    background-color: rgb(202, 191, 191);
+    background-size: cover;
+    border-radius: 5px;
+    padding: 15px;
+    
+    
+}
+
+
+#time{
+    position: absolute;
+    background-color: #f3f3f3;
+   bottom: 30px;
+    left: 92.6%;
+    height: 19px;
+    width: 62px;
+    font-size: 12px;
+    
+   z-index: 1001;
+    
+}
+
+#date{
+    position: absolute;
+    background-color: #f3f3f3;
+   bottom: 13px;
+    left: 92.6%;
+    height: 19px;
+    width: 62px;
+    font-size: 12px;
+    
+   z-index: 1001;
+    
+}
+
+
+.utilsDiv{
+    position: relative;
+    margin-left: auto;
+    top: 85%;
+    /* left: 25%; */
+    
+    width: 22%;
+    height: 480px;
+    background-color: rgb(34, 34, 73);
+    opacity: 0.91;
+    transition: left 1s;
+    /* background-image: url("../img/startmenu.PNG");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    border-radius: 15px;
+    
+    text-align: center;
+    align-items: center;  
+   
+}
+
+.bSlider {
+    position: relative;
+    top: 90%;
+    margin: auto;
+    width: 70%;
+    background: #f3f3f3;
+    border-radius: 10px;
+    left: 25px;
+    padding: 5px;
+    height: 30px;
+  }
+
+  .bSlider img{
+      position: relative;
+      float: left;
+      left: -40px;
+      bottom: 20px;
+  }
+  #brightness-range {
+    width: 100%;
+   
+    background: #131212;
+    height: 5px;
+    outline: none;
+    cursor: pointer;    
+  }
+  
+
+  .folder{
+      position: absolute;
+      top: 0px;
+      height: 105.4%;
+      
+      background-color: red;
+      display: none;
+      
+  }
+
+  .folder .taskbar-mypc{
+      width: 100%;
+      height: 30px;
+      background-color: #414358;
+      top: 0px;
+  }
+
+
+  
+  .cameradiv{
+    position: absolute;
+    top: 0px;
+    height: 95%;
+    /* left: 15%; */
+    
+    background-color: rgb(8, 0, 0);
+    display: none;
+    
+}
+
+.cameradiv .taskbar-camera{
+    width: 100%;
+    height: 30px;
+    background-color: #414358;
+    top: 0px;
+}
+
+
+  .name{
+      float: left;
+      padding: 5px;
+  }
+  .right-icons{
+      display: flex;
+      float: right;
+      
+  }
+  .right-icons .icon{
+      height: 35px;
+      width: 35px;
+      padding: 3px;
+  }
+
+  .right-icons .icon:hover{
+      
+      /* background-color: rgb(121, 118, 118); */
+      box-shadow: 0 5px 15px rgba(188, 134, 241, 0.918);
+  }
+
+
+  #cam{
+      
+      position: absolute;
+      
+      top: 10%;
+      width: 100%;
+      height: 90%;
+  }
+
+
+
+
+
