@@ -22,11 +22,11 @@ body{
 .taskbar{
     /* border: 1px solid white; */
     border-top: 1px solid rgb(58, 58, 58);
-    background-image: url('../img/taskbarbackground.jpg');
-    height: 4em;
+    background: #f3f3f3;
+    height: 3em;
     position: absolute;
     width: 100%;
-    top: 92vh;
+    top: 93.6vh;
     display: flex;
     /* grid-template-columns: auto auto auto; */
     justify-content: space-between;
@@ -47,9 +47,12 @@ body{
     align-items: center;
 }
 svg{
+    
     position: absolute;
     box-shadow: rgb(156, 154, 154);
-    top: 10%;
+    top: 15%;
+    left: 20%;
+    
     max-width: 100%;
     max-height: 80%;
 }
@@ -112,7 +115,7 @@ svg{
 
 .btnhover:hover{
     border-radius: 4px;
-    background-color: rgb(138, 136, 136);
+    background-color: rgb(224, 217, 217);
 }
 
 .taskbarright {
