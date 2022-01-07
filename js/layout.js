@@ -44,56 +44,61 @@ const iconList = [
   },
   {
     id: 6,
-    src: "img/icons8-microsoft-store-50.png",
-    name: "Miscrosoft Store",
+    src: "img/icons8-microsoft-powerpoint-2019-48.png",
+    name: "Power Point",
   },
   {
     id: 7,
+    src: "img/icons8-microsoft-store-50.png",
+    name: "Store",
+  },
+  {
+    id: 8,
     src: "img/icons8-photos-50.png",
     name: "Photos",
   },
   {
-    id: 8,
+    id: 9,
     src: "img/icons8-settings-50.png",
     name: "Setting",
   },
   {
-    id: 9,
+    id: 10,
     src: "img/icons8-microsoft-office-2019-48.png",
     name: "Office",
   },
   {
-    id: 10,
+    id: 11,
     src: "img/icons8-microsoft-solitaire-collection-50.png",
     name: "Solitaire",
   },
   {
-    id: 11,
+    id: 12,
     src: "img/icons8-spotify-50.png",
     name: "Spotify",
   },
   {
-    id: 12,
+    id: 13,
     src: "img/icons8-whatsapp-48.png",
-    name: "WhatsAPp",
+    name: "WhatsApp",
   },
   {
-    id: 13,
+    id: 14,
     src: "img/icons8-microsoft-todo-2019-50.png",
     name: "Todo",
   },
   {
-    id: 14,
+    id: 15,
     src: "img/icons8-xbox-x-48.png",
     name: "Xbox",
   },
   {
-    id: 15,
+    id: 16,
     src: "img/icons8-amazon-prime-video-48.png",
     name: "Prime Video",
   },
   {
-    id: 16,
+    id: 17,
     src: "img/icons8-tiktok-48.png",
     name: "Tiktok",
   },
@@ -123,12 +128,15 @@ iconList.forEach((element) => {
   console.log(element);
   let windowsdiv = document.createElement("div");
   let windowsImg = document.createElement("img");
+  let iconsName = document.createElement("p")
   windowsdiv.className="windows-div"
   windowsImg.className="windows-icons"
+  iconsName.className="icons-name"
   windowsImg.src = element.src;
+  iconsName.innerText=element.name;
   console.log(windowsImg.src);
-  windowsdiv.appendChild(windowsImg);
   windowsdiv.setAttribute("id", `${element.id}`);
+  windowsdiv.append(windowsImg, iconsName);
   iconsDiv.append(windowsdiv);
 });
 shutdown = function () {
